@@ -2,30 +2,15 @@ ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
     listeningPort: "443"
-    targetPort: "8080"
+    targetPort: "13543"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
-    isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "6443"
-    targetPort: "8181"
-    targetIP: "172.17.0.1"
-    public: true
-    path: "/"
-    isAuth: false
-  - protocol: "HTTPS"
-    targetProtocol: "HTTP"
-    listeningPort: "5443"
-    targetPort: "8180"
-    targetIP: "172.17.0.1"
-    public: true
-    path: "/"
-    isAuth: false
+    isAuth: true
+    login: "root"
+    password: "random_password"
+    loginTitle: "HOP GUI"
 environments:
-  - key: "ADMIN_EMAIL"
-    value: "[EMAIL]"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
 

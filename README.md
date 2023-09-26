@@ -13,5 +13,9 @@ Deploy Hop server with CI/CD on Elestio
 You can open Hop ADMIN UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    email: root
+    login: root
     password: [ADMIN_PASSWORD]
+
+# Important
+
+To persist all your files, you'll have to save them in `/project` folder.
