@@ -2,7 +2,7 @@ version: "3.3"
 services:
   hop-web:
     user: 0:0
-    image: apache/hop-web:latest
+    image: apache/hop-web:${SOFTWARE_VERSION_TAG}
     ports:
       - "172.17.0.1:13543:8080"
     volumes:
